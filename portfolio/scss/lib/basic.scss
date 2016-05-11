@@ -1,0 +1,17 @@
+// basic.scss
+
+$main    :#453c45;
+$lmain   :#7c767c;
+$white   :#ffffff;
+$deg     :-50deg;
+
+@mixin linear-gradient($main, $white){
+    background-color: $white;
+    background-image: -moz-linear-gradient($deg, $main 60%, $white 40%);
+    background-image: -o-linear-gradient($deg, $main 60%, $white 40%);
+/*    background-image: -webkit-gradient($deg, color-stop(0,$main), color-stop(1, $white));*/
+    background-image: -webkit-linear-gradient($deg, $main 60%, $white 40%);
+    background-image: -ms-linear-gradient($deg, $main 60%, $white 40%);
+    background-image: linear-gradient($deg, $main 60%, $white 40%);    
+    background-image: linear-gradient($deg, $main 60%, $white 40%);    
+}
